@@ -20,6 +20,7 @@
     NSString *const kCreatedAt = @"createdAt";
     NSString *const kUpdatedAt = @"updatedAt";
     NSString *const kIsArchived = @"isArchived";
+    NSString *const kProjectId = @"projectId";
 
 
 +(EKObjectMapping *)objectMapping
@@ -35,6 +36,7 @@
         [mapping mapKeyPath:kCreatedAt toProperty:@"createdAt"];
         [mapping mapKeyPath:kUpdatedAt toProperty:@"updatedAt"];
         [mapping mapKeyPath:kIsArchived toProperty:@"isArchived"];
+        [mapping mapKeyPath:kProjectId toProperty:@"projectId"];
     }];
 }
 

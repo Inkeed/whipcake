@@ -29,14 +29,22 @@
 #pragma mark - Navigation
 
 - (IBAction)didClickAddTaskButton:(id)sender {
-        //TODO: params to send for createNewTask method after test!
-    [[APIMainPage sharedMainPage] createNewTask:self.enterTaskNameTextField.text description:self.enterDecriptionTextField.text deadline:[self stringWithDeadLineDate] data:[self dictionaryForDataToSend] importance:2 complexity:2 success:^{
+        //TODO: params to send for createNewTask method after tests!
+    [[APIMainPage sharedMainPage] createNewTask:self.enterTaskNameTextField.text description:self.enterDecriptionTextField.text deadline:[self stringWithDeadLineDate] data:[self dictionaryForDataToSend] importance:2 complexity:2 projectId:6 success:^{
         // TODO: success
     } failure:^(NSError * _Nonnull error) {
         // TODO: failure
     }];
 }
 
+- (IBAction)didClickUpdateTaskButton:(id)sender {
+    //TODO: params to send for UpdateTask method after tests!
+    [[APIMainPage sharedMainPage] updateTaskById:self.enterTaskNameTextField.text description:self.enterDecriptionTextField.text deadline:[self stringWithDeadLineDate] data:[self dictionaryForDataToSend] importance:2 complexity:2 projectId:6 taskId:31 success:^{
+        // TODO: success
+    } failure:^(NSError * _Nonnull error) {
+        // TODO: failure
+    }];
+}
 - (NSString*) stringWithDeadLineDate {
     NSDate *now = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];

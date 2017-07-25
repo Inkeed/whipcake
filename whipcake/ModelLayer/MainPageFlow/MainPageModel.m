@@ -45,7 +45,7 @@
 
 -(NSString *)textForHeaderInSection:(NSInteger)section {
 #warning TODO:
-    return [NSString stringWithFormat:@"Section #%li",section];
+    return [NSString stringWithFormat:@"Project #%li",section];
 }
 
 -(MainPageHeaderViewModel *)viewModelForSection:(NSInteger)section {

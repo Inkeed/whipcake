@@ -9,6 +9,7 @@
 #import "APIMainPage.h"
 #import "CurrentUser.h"
 #import "RequestInfoBuilder+Task.h"
+#import "RequestInfoBuilder+Project.h"
 @implementation APIMainPage
 
 +(instancetype) sharedMainPage {
@@ -20,17 +21,101 @@
     return shared;
 }
 
+#pragma mark - Project Methods
+
+- (void) updateProjectById:(NSString *)title description:(NSString *)description isArchived:(BOOL)isArchived color:(NSString *)color projectId:(NSInteger)projectId success:(void (^)(void))successBlock failure:(void (^)(NSError * _Nonnull))failureBlock{
+    [self request:[RequestInfoBuilder updateProjectById:(NSString *)title description:(NSString *)description isArchived:(BOOL)isArchived color:(NSString *)color projectId:(NSInteger)projectId]success:successBlock failure:failureBlock];
+}
+
+- (void) getProjectById:(NSInteger )projectId
+                success:(void (^)(void))successBlock
+                failure:(void (^)(NSError * _Nonnull))failureBlock{
+    [self request:[RequestInfoBuilder getProjectById:(NSInteger)projectId]success:successBlock failure:failureBlock];
+}
+
+
+- (void) getLatestProjects:(NSInteger )projectId
+                   success:(void (^)(void))successBlock
+                   failure:(void (^)(NSError * _Nonnull))failureBlock{
+    [self request:[RequestInfoBuilder getLatestProjects:(NSInteger)projectId]success:successBlock failure:failureBlock];
+}
+
+
+- (void) deleteProjectById:(NSInteger )projectId
+                   success:(void (^)(void))successBlock
+                   failure:(void (^)(NSError * _Nonnull))failureBlock{
+    [self request:[RequestInfoBuilder deleteProjectById:(NSInteger)projectId]success:successBlock failure:failureBlock];
+}
+
+
+-(void) createNewProject:(NSString *)title
+             description:(NSString *)description
+              isArchived:(BOOL)isArchived
+                   color:(NSString *)color
+                 success:(void (^)(void))successBlock
+                 failure:(void (^)(NSError * _Nonnull))failureBlock{
+    [self request:[RequestInfoBuilder createProject:(NSString *)title description:(NSString *)description isArchived:(BOOL)isArchived color:(NSString *)color] success:successBlock failure:failureBlock];
+}
+
+#pragma mark - Task Methods
+
+
+- (void) updateTaskById:(NSString *)title
+            description:(NSString *)description
+               deadline:(NSString *)deadline
+                   data:(NSDictionary *)data
+             importance:(NSInteger )importance
+             complexity:(NSInteger )complexity
+              projectId:(NSInteger )projectId
+                 taskId:(NSInteger )taskId
+                success:(void (^)(void))successBlock
+                failure:(void (^)(NSError * _Nonnull))failureBlock{
+    [self request:[RequestInfoBuilder updateTaskById:(NSString *)title description:(NSString *)description deadline:(NSString *)deadline data:(NSDictionary *)data importance:(NSInteger)importance complexity:(NSInteger)complexity projectId:(NSInteger)projectId taskId:(NSInteger)taskId]success:successBlock failure:failureBlock];
+}
+
+
+
+
+- (void) deleteTaskById:(NSInteger )taskId
+                success:(void (^)(void))successBlock
+                failure:(void (^)(NSError * _Nonnull))failureBlock{
+    [self request:[RequestInfoBuilder deleteTaskById:(NSInteger)taskId]success:successBlock failure:failureBlock];
+}
+
+
+
+- (void) getTaskById:(NSInteger )taskId
+             success:(void (^)(void))successBlock
+             failure:(void (^)(NSError * _Nonnull))failureBlock{
+    [self request:[RequestInfoBuilder getTaskById:(NSInteger ) taskId] success:successBlock failure:failureBlock];
+}
+
+
 - (void) createNewTask:(NSString *)title
            description:(NSString *)description
               deadline:(NSString *)deadline
                   data:(NSDictionary *)data
             importance:(NSInteger)importance
             complexity:(NSInteger)complexity
+             projectId:(NSInteger)projectId
                success:(void (^)(void))successBlock
                failure:(void (^)(NSError * _Nonnull))failureBlock{
     
-    [self request:[RequestInfoBuilder createTask:(NSString *)title description:(NSString *)description deadline:(NSString *)deadline data:(NSDictionary *)data importance:(NSInteger)importance complexity:(NSInteger)complexity] success:successBlock failure:failureBlock];
+    [self request:[RequestInfoBuilder createTask:(NSString *)title description:(NSString *)description deadline:(NSString *)deadline data:(NSDictionary *)data importance:(NSInteger)importance complexity:(NSInteger)complexity projectId:(NSInteger)projectId] success:successBlock failure:failureBlock];
 }
+
+
+
+- (void) getLatestTasks:(NSInteger )taskId
+                success:(void (^)(void))successBlock
+                failure:(void (^)(NSError * _Nonnull))failureBlock {
+    [self request:[RequestInfoBuilder getLatestTasks:taskId] success:successBlock failure:failureBlock];
+}
+
+
+
+
+
 
 
 -(void)request:(RequestInfo *)requestInfo success:(void (^)(void))successBlock failure:(void (^)(NSError * _Nonnull))failureBlock {

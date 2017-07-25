@@ -29,8 +29,9 @@
     [request setURL:url];
     request.allHTTPHeaderFields = self.httpHeader;
     [request setHTTPMethod:self.httpMethod];
+    if (self.bodyParameters ) {
     [request setHTTPBody:self.httpBody];
-    
+    }
     return request;
 }
 

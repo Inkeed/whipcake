@@ -21,6 +21,7 @@
 @property (nonatomic, strong) NSString* createdAt;
 @property (nonatomic, strong) NSString* updatedAt;
 @property (nonatomic, assign) BOOL isArchived;
+@property (nonatomic, assign) NSInteger projectId;
 
 
 

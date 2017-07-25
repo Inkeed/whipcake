@@ -10,6 +10,7 @@
 #import "RequestInfoBuilder+Login.h"
 #import "CurrentUser.h"
 #import "UserAuthModel.h"
+#import <UIKit/UIKit.h>
 
 @implementation APILogin
 
@@ -50,6 +51,8 @@
         } else {
             NSString *stringWithResopnse = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
             NSLog(@"Data received: %@", stringWithResopnse);
+            [self showMessage:@"Email is already singed up"
+                    withTitle:@"Error"];
             dispatch_async(dispatch_get_main_queue(), ^{
                 failureBlock(error);
             });
@@ -57,4 +60,15 @@
     }] resume];
 }
 
+-(void)showMessage:(NSString*)message withTitle:(NSString *)title{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+        }]];
+        
+        [[[[UIApplication sharedApplication] keyWindow] rootViewController] presentViewController:alertController animated:YES completion:^{
+        }];
+    });
+}
 @end

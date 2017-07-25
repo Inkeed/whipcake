@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <EasyMapping/EasyMapping.h>
 
-@interface User : NSObject<EKMappingProtocol>
+@interface User : NSObject
 
 @property (nonatomic, assign) NSInteger userId;
 @property (nonatomic, strong) NSString* login;

@@ -7,7 +7,9 @@
 //
 
 #import "NSString+ServerDate.h"
+
 #import "NSDateFormatter+Server.h"
+
 @implementation NSString (ServerDate)
 
 -(NSDate *)serverFormattedDate {

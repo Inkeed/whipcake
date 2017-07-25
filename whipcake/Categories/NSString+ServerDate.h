@@ -10,6 +10,6 @@
 
 @interface NSString (ServerDate)
 
--(NSDate *)serverFormattedDate;
+- (NSDate *) serverFormattedDate;
 
 @end

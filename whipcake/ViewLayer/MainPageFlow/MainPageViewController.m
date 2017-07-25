@@ -10,6 +10,7 @@
 #import "MainPageModel.h"
 #import "MainPageHeaderView.h"
 #import "MainPageHeaderViewModel.h"
+#import "APIMainPage.h"
 
 @interface MainPageViewController () <UITableViewDataSource, UITableViewDelegate, MainPageHeaderViewDelegate, MainPageModelDelegate>
 
@@ -38,11 +39,56 @@ static const NSString* kMainPageToAddTask = @"MainPageToAddTaskSegue";
 
 
 #pragma mark - UITableView DataSource Methods
-
-- (IBAction)didClickAddNewTaskButton:(id)sender {
+- (IBAction)didClickTaskButton:(id)sender {
     [self performSegueWithIdentifier:kMainPageToAddTask sender:nil];
 }
+- (IBAction)didClickDeleteTaskButton:(id)sender {
+    [[APIMainPage sharedMainPage] deleteTaskById:32 success:^{ //TODO: Fix input params!
+        // TODO: success
+    } failure:^(NSError * _Nonnull error) {
+        // TODO: failure
+    }];
+}
 
+- (IBAction)didClickUpdateProjectButton:(id)sender {
+    //TODO: Fix input params after tests!
+    [[APIMainPage sharedMainPage] updateProjectById:@"updated Test project" description:@"updated decription for test project" isArchived:[self isArchvied] color:@"5a4218" projectId:6 success:^{
+        // TODO: success
+    } failure:^(NSError * _Nonnull error) {
+        // TODO: failure
+    }];
+}
+
+
+- (IBAction)didClickDeleteProjectButton:(id)sender {
+    [[APIMainPage sharedMainPage] deleteProjectById:7 success:^{ //TODO: Fix input params!
+        // TODO: success
+    } failure:^(NSError * _Nonnull error) {
+        // TODO: failure
+    }];
+}
+
+- (IBAction)didClickLatestTasksButton:(id)sender {
+    [[APIMainPage sharedMainPage] getLatestTasks:32 success:^{ //TODO: Fix input params!
+        // TODO: success
+    } failure:^(NSError * _Nonnull error) {
+        // TODO: failure
+    }];
+}
+
+
+- (IBAction)didClickAddProjectButton:(id)sender { //TODO: Fix input params!
+    [[APIMainPage sharedMainPage] createNewProject:@"testproject3" description:@"test project, remove after tests" isArchived:[self isArchvied] color:@"5a4218" success:^{
+        // TODO: success
+    } failure:^(NSError * _Nonnull error) {
+        // TODO: failure
+    }];
+}
+
+- (BOOL) isArchvied {
+    //remove after test!
+    return NO;
+}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {

@@ -10,6 +10,8 @@
 		58035FCA1ED1D12E007B008B /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58035FC91ED1D12E007B008B /* CreateAccountViewController.m */; };
 		58035FCD1ED1E83E007B008B /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58035FCC1ED1E83E007B008B /* SignInViewController.m */; };
 		58035FD01ED20EE8007B008B /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58035FCF1ED20EE8007B008B /* MainPageViewController.m */; };
+		5833D5941F19C12C00CEE539 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 5833D5931F19C12C00CEE539 /* Project.m */; };
+		5833D59E1F1B1CB200CEE539 /* RequestInfoBuilder+Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 5833D59D1F1B1CB200CEE539 /* RequestInfoBuilder+Project.m */; };
 		584118CC1F014B7E00298DD4 /* UserAuthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 584118CB1F014B7E00298DD4 /* UserAuthModel.m */; };
 		584118D01F014DA300298DD4 /* NSString+ServerDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 584118CF1F014DA300298DD4 /* NSString+ServerDate.m */; };
 		584118D31F014E4000298DD4 /* NSDateFormatter+Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 584118D21F014E4000298DD4 /* NSDateFormatter+Server.m */; };
@@ -26,21 +28,11 @@
 		5879F9CE1ECA3D7D00B7CBE6 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879F9CD1ECA3D7D00B7CBE6 /* APIClient.m */; };
 		5879F9D41ECA3E3900B7CBE6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879F9D31ECA3E3900B7CBE6 /* User.m */; };
 		5879F9D81ECA3EBB00B7CBE6 /* CurrentUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879F9D71ECA3EBB00B7CBE6 /* CurrentUser.m */; };
-		58995F1B1EE857FC0014891E /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58995F1A1EE857FC0014891E /* MessagesViewController.m */; };
-		58995F1E1EE858660014891E /* ProjectPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58995F1D1EE858660014891E /* ProjectPageViewController.m */; };
-		58995F211EE858C20014891E /* FindGuarantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58995F201EE858C20014891E /* FindGuarantViewController.m */; };
-		58995F271EE8590E0014891E /* FindExecutorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58995F261EE8590E0014891E /* FindExecutorViewController.m */; };
 		58AADF721EC364DA00352845 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AADF711EC364DA00352845 /* main.m */; };
 		58AADF751EC364DA00352845 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AADF741EC364DA00352845 /* AppDelegate.m */; };
 		58AADF7D1EC364DA00352845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58AADF7C1EC364DA00352845 /* Assets.xcassets */; };
 		58AADF901EC369A600352845 /* LoginFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58AADF8F1EC369A600352845 /* LoginFlow.storyboard */; };
 		58AADF9F1EC38C5300352845 /* MainPageFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58AADF9E1EC38C5300352845 /* MainPageFlow.storyboard */; };
-		58AAE8ED1EF05E14008A707B /* MessagesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AAE8EC1EF05E14008A707B /* MessagesTableViewCell.m */; };
-		58AAE8F01EF061C1008A707B /* MessagesPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AAE8EF1EF061C1008A707B /* MessagesPageModel.m */; };
-		58AAE8F31EF067BD008A707B /* FindGuarantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AAE8F21EF067BD008A707B /* FindGuarantTableViewCell.m */; };
-		58AAE8F71EF068A0008A707B /* FindGuarantPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AAE8F61EF068A0008A707B /* FindGuarantPageModel.m */; };
-		58AAE8FA1EF068D6008A707B /* FindExecutorPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AAE8F91EF068D6008A707B /* FindExecutorPageModel.m */; };
-		58AAE8FE1EF074CC008A707B /* FindExecutorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AAE8FD1EF074CC008A707B /* FindExecutorTableViewCell.m */; };
 		58B62B541F04082D0059469B /* RequestInfoBuilder+Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B62B531F04082D0059469B /* RequestInfoBuilder+Task.m */; };
 		58B62B571F0414840059469B /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B62B561F0414840059469B /* Task.m */; };
 		58B62B5A1F041F370059469B /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B62B591F041F370059469B /* AddTaskViewController.m */; };
@@ -59,6 +51,10 @@
 		58035FCC1ED1E83E007B008B /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignInViewController.m; path = /Users/Oleygen/Desktop/dev/ilya/whipcake/whipcake/ViewLayer/LoginFlow/SignInViewController.m; sourceTree = "<absolute>"; };
 		58035FCE1ED20EE8007B008B /* MainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPageViewController.h; sourceTree = "<group>"; };
 		58035FCF1ED20EE8007B008B /* MainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPageViewController.m; sourceTree = "<group>"; };
+		5833D5921F19C12C00CEE539 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		5833D5931F19C12C00CEE539 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		5833D59C1F1B1CB200CEE539 /* RequestInfoBuilder+Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestInfoBuilder+Project.h"; sourceTree = "<group>"; };
+		5833D59D1F1B1CB200CEE539 /* RequestInfoBuilder+Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestInfoBuilder+Project.m"; sourceTree = "<group>"; };
 		584118CA1F014B7E00298DD4 /* UserAuthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAuthModel.h; sourceTree = "<group>"; };
 		584118CB1F014B7E00298DD4 /* UserAuthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAuthModel.m; sourceTree = "<group>"; };
 		584118CE1F014DA300298DD4 /* NSString+ServerDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ServerDate.h"; sourceTree = "<group>"; };
@@ -90,14 +86,6 @@
 		5879F9D31ECA3E3900B7CBE6 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		5879F9D61ECA3EBB00B7CBE6 /* CurrentUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentUser.h; sourceTree = "<group>"; };
 		5879F9D71ECA3EBB00B7CBE6 /* CurrentUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentUser.m; sourceTree = "<group>"; };
-		58995F191EE857FC0014891E /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
-		58995F1A1EE857FC0014891E /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
-		58995F1C1EE858660014891E /* ProjectPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectPageViewController.h; sourceTree = "<group>"; };
-		58995F1D1EE858660014891E /* ProjectPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectPageViewController.m; sourceTree = "<group>"; };
-		58995F1F1EE858C20014891E /* FindGuarantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindGuarantViewController.h; sourceTree = "<group>"; };
-		58995F201EE858C20014891E /* FindGuarantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindGuarantViewController.m; sourceTree = "<group>"; };
-		58995F251EE8590E0014891E /* FindExecutorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindExecutorViewController.h; sourceTree = "<group>"; };
-		58995F261EE8590E0014891E /* FindExecutorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindExecutorViewController.m; sourceTree = "<group>"; };
 		58AADF6D1EC364DA00352845 /* whipcake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whipcake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AADF711EC364DA00352845 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58AADF731EC364DA00352845 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,18 +94,6 @@
 		58AADF811EC364DA00352845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58AADF8F1EC369A600352845 /* LoginFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginFlow.storyboard; sourceTree = "<group>"; };
 		58AADF9E1EC38C5300352845 /* MainPageFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainPageFlow.storyboard; sourceTree = "<group>"; };
-		58AAE8EB1EF05E14008A707B /* MessagesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessagesTableViewCell.h; path = ../MainPageFlow/Views/MessagesTableViewCell.h; sourceTree = "<group>"; };
-		58AAE8EC1EF05E14008A707B /* MessagesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessagesTableViewCell.m; path = ../MainPageFlow/Views/MessagesTableViewCell.m; sourceTree = "<group>"; };
-		58AAE8EE1EF061C1008A707B /* MessagesPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessagesPageModel.h; path = ViewModels/MessagesPageModel.h; sourceTree = "<group>"; };
-		58AAE8EF1EF061C1008A707B /* MessagesPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessagesPageModel.m; path = ViewModels/MessagesPageModel.m; sourceTree = "<group>"; };
-		58AAE8F11EF067BD008A707B /* FindGuarantTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FindGuarantTableViewCell.h; path = ../MainPageFlow/Views/FindGuarantTableViewCell.h; sourceTree = "<group>"; };
-		58AAE8F21EF067BD008A707B /* FindGuarantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FindGuarantTableViewCell.m; path = ../MainPageFlow/Views/FindGuarantTableViewCell.m; sourceTree = "<group>"; };
-		58AAE8F51EF068A0008A707B /* FindGuarantPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindGuarantPageModel.h; sourceTree = "<group>"; };
-		58AAE8F61EF068A0008A707B /* FindGuarantPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindGuarantPageModel.m; sourceTree = "<group>"; };
-		58AAE8F81EF068D6008A707B /* FindExecutorPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindExecutorPageModel.h; sourceTree = "<group>"; };
-		58AAE8F91EF068D6008A707B /* FindExecutorPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindExecutorPageModel.m; sourceTree = "<group>"; };
-		58AAE8FC1EF074CC008A707B /* FindExecutorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindExecutorTableViewCell.h; sourceTree = "<group>"; };
-		58AAE8FD1EF074CC008A707B /* FindExecutorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindExecutorTableViewCell.m; sourceTree = "<group>"; };
 		58B62B521F04082D0059469B /* RequestInfoBuilder+Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestInfoBuilder+Task.h"; sourceTree = "<group>"; };
 		58B62B531F04082D0059469B /* RequestInfoBuilder+Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestInfoBuilder+Task.m"; sourceTree = "<group>"; };
 		58B62B551F0414840059469B /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
@@ -151,17 +127,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		581C68FE1EE9B1EC006B1E9F /* FindFlow */ = {
-			isa = PBXGroup;
-			children = (
-				58995F1F1EE858C20014891E /* FindGuarantViewController.h */,
-				58995F201EE858C20014891E /* FindGuarantViewController.m */,
-				58995F251EE8590E0014891E /* FindExecutorViewController.h */,
-				58995F261EE8590E0014891E /* FindExecutorViewController.m */,
-			);
-			name = FindFlow;
-			sourceTree = "<group>";
-		};
 		581C68FF1EE9B2C5006B1E9F /* LoginFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,7 +145,8 @@
 			children = (
 				584118C91F014B4100298DD4 /* LoginFlow */,
 			);
-			path = MappingLayer;
+			name = MappingLayer;
+			path = ../MappingLayer;
 			sourceTree = "<group>";
 		};
 		584118C91F014B4100298DD4 /* LoginFlow */ = {
@@ -199,6 +165,7 @@
 				584118CF1F014DA300298DD4 /* NSString+ServerDate.m */,
 				584118D11F014E4000298DD4 /* NSDateFormatter+Server.h */,
 				584118D21F014E4000298DD4 /* NSDateFormatter+Server.m */,
+				584118C71F014B1700298DD4 /* MappingLayer */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -221,6 +188,8 @@
 				584118DB1F01550100298DD4 /* APIMainPage.m */,
 				58B62B521F04082D0059469B /* RequestInfoBuilder+Task.h */,
 				58B62B531F04082D0059469B /* RequestInfoBuilder+Task.m */,
+				5833D59C1F1B1CB200CEE539 /* RequestInfoBuilder+Project.h */,
+				5833D59D1F1B1CB200CEE539 /* RequestInfoBuilder+Project.m */,
 			);
 			path = MainPageFlow;
 			sourceTree = "<group>";
@@ -243,8 +212,6 @@
 		5877AA4E1ED4C17100A0B6D3 /* MainPageFlow */ = {
 			isa = PBXGroup;
 			children = (
-				58AAE8EE1EF061C1008A707B /* MessagesPageModel.h */,
-				58AAE8EF1EF061C1008A707B /* MessagesPageModel.m */,
 				5877AA591ED4C63100A0B6D3 /* ViewModels */,
 				5877AA4F1ED4C19A00A0B6D3 /* MainPageModel.h */,
 				5877AA501ED4C19A00A0B6D3 /* MainPageModel.m */,
@@ -255,14 +222,9 @@
 		5877AA541ED4C46A00A0B6D3 /* MainPageFlow */ = {
 			isa = PBXGroup;
 			children = (
-				581C68FE1EE9B1EC006B1E9F /* FindFlow */,
 				5877AA551ED4C4A100A0B6D3 /* Views */,
 				58035FCE1ED20EE8007B008B /* MainPageViewController.h */,
 				58035FCF1ED20EE8007B008B /* MainPageViewController.m */,
-				58995F191EE857FC0014891E /* MessagesViewController.h */,
-				58995F1A1EE857FC0014891E /* MessagesViewController.m */,
-				58995F1C1EE858660014891E /* ProjectPageViewController.h */,
-				58995F1D1EE858660014891E /* ProjectPageViewController.m */,
 				58B62B581F041F370059469B /* AddTaskViewController.h */,
 				58B62B591F041F370059469B /* AddTaskViewController.m */,
 			);
@@ -307,7 +269,6 @@
 		5879F9D01ECA3E0A00B7CBE6 /* ModelLayer */ = {
 			isa = PBXGroup;
 			children = (
-				58AAE8F41EF0683B008A707B /* FindFlow */,
 				5877AA4E1ED4C17100A0B6D3 /* MainPageFlow */,
 				5879F9D11ECA3E2D00B7CBE6 /* General */,
 			);
@@ -321,6 +282,8 @@
 				5879F9D31ECA3E3900B7CBE6 /* User.m */,
 				58B62B551F0414840059469B /* Task.h */,
 				58B62B561F0414840059469B /* Task.m */,
+				5833D5921F19C12C00CEE539 /* Project.h */,
+				5833D5931F19C12C00CEE539 /* Project.m */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -357,7 +320,6 @@
 			isa = PBXGroup;
 			children = (
 				584118CD1F014D7500298DD4 /* Categories */,
-				584118C71F014B1700298DD4 /* MappingLayer */,
 				58D948D31ED0C5AF002AC838 /* ViewLayer */,
 				5879F9D51ECA3E8F00B7CBE6 /* ServiceLayer */,
 				5879F9D01ECA3E0A00B7CBE6 /* ModelLayer */,
@@ -423,34 +385,9 @@
 			name = "Main Page Flow";
 			sourceTree = "<group>";
 		};
-		58AAE8F41EF0683B008A707B /* FindFlow */ = {
-			isa = PBXGroup;
-			children = (
-				58AAE8F51EF068A0008A707B /* FindGuarantPageModel.h */,
-				58AAE8F61EF068A0008A707B /* FindGuarantPageModel.m */,
-				58AAE8F81EF068D6008A707B /* FindExecutorPageModel.h */,
-				58AAE8F91EF068D6008A707B /* FindExecutorPageModel.m */,
-			);
-			path = FindFlow;
-			sourceTree = "<group>";
-		};
-		58AAE8FB1EF06B3A008A707B /* Custom cells */ = {
-			isa = PBXGroup;
-			children = (
-				58AAE8EB1EF05E14008A707B /* MessagesTableViewCell.h */,
-				58AAE8EC1EF05E14008A707B /* MessagesTableViewCell.m */,
-				58AAE8F11EF067BD008A707B /* FindGuarantTableViewCell.h */,
-				58AAE8F21EF067BD008A707B /* FindGuarantTableViewCell.m */,
-				58AAE8FC1EF074CC008A707B /* FindExecutorTableViewCell.h */,
-				58AAE8FD1EF074CC008A707B /* FindExecutorTableViewCell.m */,
-			);
-			path = "Custom cells";
-			sourceTree = "<group>";
-		};
 		58D948D31ED0C5AF002AC838 /* ViewLayer */ = {
 			isa = PBXGroup;
 			children = (
-				58AAE8FB1EF06B3A008A707B /* Custom cells */,
 				581C68FF1EE9B2C5006B1E9F /* LoginFlow */,
 				5877AA541ED4C46A00A0B6D3 /* MainPageFlow */,
 			);
@@ -610,27 +547,19 @@
 				58EB21CC1EDC7FB500DB22EE /* ViewControllerFactory.m in Sources */,
 				58B62B571F0414840059469B /* Task.m in Sources */,
 				584FEC601EDC704B006303C3 /* NavigationManager.m in Sources */,
-				58AAE8ED1EF05E14008A707B /* MessagesTableViewCell.m in Sources */,
 				5879F9D41ECA3E3900B7CBE6 /* User.m in Sources */,
-				58AAE8F01EF061C1008A707B /* MessagesPageModel.m in Sources */,
-				58AAE8FE1EF074CC008A707B /* FindExecutorTableViewCell.m in Sources */,
 				58AADF751EC364DA00352845 /* AppDelegate.m in Sources */,
 				58B62B541F04082D0059469B /* RequestInfoBuilder+Task.m in Sources */,
 				5877AA511ED4C19A00A0B6D3 /* MainPageModel.m in Sources */,
 				584118D01F014DA300298DD4 /* NSString+ServerDate.m in Sources */,
-				58995F1E1EE858660014891E /* ProjectPageViewController.m in Sources */,
-				58AAE8F71EF068A0008A707B /* FindGuarantPageModel.m in Sources */,
-				58995F271EE8590E0014891E /* FindExecutorViewController.m in Sources */,
 				58035FD01ED20EE8007B008B /* MainPageViewController.m in Sources */,
-				58995F1B1EE857FC0014891E /* MessagesViewController.m in Sources */,
 				584118D91F0154F600298DD4 /* APILogin.m in Sources */,
-				58AAE8FA1EF068D6008A707B /* FindExecutorPageModel.m in Sources */,
-				58AAE8F31EF067BD008A707B /* FindGuarantTableViewCell.m in Sources */,
 				58AADF721EC364DA00352845 /* main.m in Sources */,
 				584118E21F01583B00298DD4 /* RequestInfoBuilder.m in Sources */,
 				5877AA5F1ED4C6F900A0B6D3 /* MainPageHeaderViewConstants.m in Sources */,
-				58995F211EE858C20014891E /* FindGuarantViewController.m in Sources */,
 				5879F9CE1ECA3D7D00B7CBE6 /* APIClient.m in Sources */,
+				5833D5941F19C12C00CEE539 /* Project.m in Sources */,
+				5833D59E1F1B1CB200CEE539 /* RequestInfoBuilder+Project.m in Sources */,
 				584118E51F01586000298DD4 /* RequestInfoBuilder+Login.m in Sources */,
 				58D948D61ED0C5E2002AC838 /* LaunchScreenViewController.m in Sources */,
 			);
