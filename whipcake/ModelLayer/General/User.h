@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <EasyMapping/EasyMapping.h>
-
+#import "Project.h"
 @interface User : NSObject
 
 @property (nonatomic, assign) NSInteger userId;
@@ -22,10 +22,11 @@
 @property (nonatomic, strong) NSString* createdAt;
 @property (nonatomic, strong) NSString* updatedAt;
 @property (nonatomic, assign) NSInteger cityId;
-@property (nonatomic, strong) NSDictionary* statuses;
+@property (nonatomic, strong) NSDictionary* statuses; //TODO 
 @property (nonatomic, assign) NSInteger userRankId;
 @property (nonatomic, strong) NSString* premiumUntil;
 @property (nonatomic, assign) BOOL isBanned;
+@property (nonatomic, strong, nonnull) NSArray<Project *> *userProjects;
 
 
 @end

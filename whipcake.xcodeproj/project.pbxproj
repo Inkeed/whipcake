@@ -20,7 +20,6 @@
 		584118E21F01583B00298DD4 /* RequestInfoBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 584118E11F01583B00298DD4 /* RequestInfoBuilder.m */; };
 		584118E51F01586000298DD4 /* RequestInfoBuilder+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 584118E41F01586000298DD4 /* RequestInfoBuilder+Login.m */; };
 		584FEC601EDC704B006303C3 /* NavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 584FEC5F1EDC704B006303C3 /* NavigationManager.m */; };
-		5877AA511ED4C19A00A0B6D3 /* MainPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5877AA501ED4C19A00A0B6D3 /* MainPageModel.m */; };
 		5877AA531ED4C3E400A0B6D3 /* MainPageHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5877AA521ED4C3E400A0B6D3 /* MainPageHeaderView.xib */; };
 		5877AA581ED4C4B500A0B6D3 /* MainPageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5877AA571ED4C4B500A0B6D3 /* MainPageHeaderView.m */; };
 		5877AA5C1ED4C64700A0B6D3 /* MainPageHeaderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5877AA5B1ED4C64700A0B6D3 /* MainPageHeaderViewModel.m */; };
@@ -71,8 +70,6 @@
 		584118E41F01586000298DD4 /* RequestInfoBuilder+Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestInfoBuilder+Login.m"; sourceTree = "<group>"; };
 		584FEC5E1EDC704B006303C3 /* NavigationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationManager.h; sourceTree = "<group>"; };
 		584FEC5F1EDC704B006303C3 /* NavigationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationManager.m; sourceTree = "<group>"; };
-		5877AA4F1ED4C19A00A0B6D3 /* MainPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPageModel.h; sourceTree = "<group>"; };
-		5877AA501ED4C19A00A0B6D3 /* MainPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPageModel.m; sourceTree = "<group>"; };
 		5877AA521ED4C3E400A0B6D3 /* MainPageHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPageHeaderView.xib; sourceTree = "<group>"; };
 		5877AA561ED4C4B500A0B6D3 /* MainPageHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPageHeaderView.h; sourceTree = "<group>"; };
 		5877AA571ED4C4B500A0B6D3 /* MainPageHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPageHeaderView.m; sourceTree = "<group>"; };
@@ -213,8 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				5877AA591ED4C63100A0B6D3 /* ViewModels */,
-				5877AA4F1ED4C19A00A0B6D3 /* MainPageModel.h */,
-				5877AA501ED4C19A00A0B6D3 /* MainPageModel.m */,
 			);
 			path = MainPageFlow;
 			sourceTree = "<group>";
@@ -550,7 +545,6 @@
 				5879F9D41ECA3E3900B7CBE6 /* User.m in Sources */,
 				58AADF751EC364DA00352845 /* AppDelegate.m in Sources */,
 				58B62B541F04082D0059469B /* RequestInfoBuilder+Task.m in Sources */,
-				5877AA511ED4C19A00A0B6D3 /* MainPageModel.m in Sources */,
 				584118D01F014DA300298DD4 /* NSString+ServerDate.m in Sources */,
 				58035FD01ED20EE8007B008B /* MainPageViewController.m in Sources */,
 				584118D91F0154F600298DD4 /* APILogin.m in Sources */,

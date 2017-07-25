@@ -9,6 +9,7 @@
 #import "CreateAccountViewController.h"
 #import "APILogin.h"
 #import "NavigationManager.h"
+#import "APIMainPage.h"
 
 
 @interface CreateAccountViewController ()
@@ -36,6 +37,8 @@
     
     [[APILogin shared] registerUserWithEmail:self.emailTextFIeld.text password:self.passwordTextField.text success:^{
         [NavigationManager.instance embedMainPageFlow];
+        //[self createDefaultProjects];
+        //[self createDefaultTasks];
     } failure:^(NSError * _Nonnull error) {
         //TODO: add error handler;
     }];
@@ -46,5 +49,73 @@
 }
 
 
+- (void) createDefaultTasks {
+    //TODO: params to send for createNewTask method after tests!
+    [[APIMainPage sharedMainPage] createNewTask:@"Default task1" description:@"test" deadline:[self stringWithDeadLineDate] data:[self dictionaryForDataToSend] importance:2 complexity:2 projectId:7 success:^{
+        // TODO: success
+    } failure:^(NSError * _Nonnull error) {
+        // TODO: failure
+    }];
+
+    //TODO: params to send for createNewTask method after tests!
+    [[APIMainPage sharedMainPage] createNewTask:@"Default task2" description:@"test" deadline:[self stringWithDeadLineDate] data:[self dictionaryForDataToSend] importance:2 complexity:2 projectId:7 success:^{
+        // TODO: success
+    } failure:^(NSError * _Nonnull error) {
+        // TODO: failure
+    }];
+
+    //TODO: params to send for createNewTask method after tests!
+    [[APIMainPage sharedMainPage] createNewTask:@"Default task3" description:@"test" deadline:[self stringWithDeadLineDate] data:[self dictionaryForDataToSend] importance:2 complexity:2 projectId:7 success:^{
+        // TODO: success
+    } failure:^(NSError * _Nonnull error) {
+        // TODO: failure
+    }];
+
+}
+
+- (void) createDefaultProjects {
+    [[APIMainPage sharedMainPage] createNewProject:@"Work" description:@"test project, remove after tests" isArchived:(BOOL)NO color:@"5a4218" success:^{
+        // TODO: success
+    } failure:^(NSError * _Nonnull error) {
+        // TODO: failure
+    }];
+    [[APIMainPage sharedMainPage] createNewProject:@"Travel" description:@"test project, remove after tests" isArchived:(BOOL)NO color:@"5a4218" success:^{
+        // TODO: success
+    } failure:^(NSError * _Nonnull error) {
+        // TODO: failure
+    }];
+    [[APIMainPage sharedMainPage] createNewProject:@"Shopping" description:@"test project, remove after tests" isArchived:(BOOL)NO color:@"5a4218" success:^{
+        // TODO: success
+    } failure:^(NSError * _Nonnull error) {
+        // TODO: failure
+    }];
+    [[APIMainPage sharedMainPage] createNewProject:@"Sport" description:@"test project, remove after tests" isArchived:(BOOL)NO color:@"5a4218" success:^{
+        // TODO: success
+    } failure:^(NSError * _Nonnull error) {
+        // TODO: failure
+    }];
+    [[APIMainPage sharedMainPage] createNewProject:@"Personal" description:@"test project, remove after tests" isArchived:(BOOL)NO color:@"5a4218" success:^{
+        // TODO: success
+    } failure:^(NSError * _Nonnull error) {
+        // TODO: failure
+    }];
+    [[APIMainPage sharedMainPage] createNewProject:@"General" description:@"test project, remove after tests" isArchived:(BOOL)NO color:@"5a4218" success:^{
+        // TODO: success
+    } failure:^(NSError * _Nonnull error) {
+        // TODO: failure
+    }];
+}
+
+- (NSString*) stringWithDeadLineDate {
+    NSDate *now = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
+    NSString *deadLineDate = [dateFormatter stringFromDate:now];
+    return deadLineDate;
+}
+- (NSDictionary*) dictionaryForDataToSend {
+    NSDictionary *dic = [[NSDictionary alloc]init];
+    return dic;
+}
 
 @end

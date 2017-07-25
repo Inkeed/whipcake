@@ -30,7 +30,7 @@
 
 - (IBAction)didClickAddTaskButton:(id)sender {
         //TODO: params to send for createNewTask method after tests!
-    [[APIMainPage sharedMainPage] createNewTask:self.enterTaskNameTextField.text description:self.enterDecriptionTextField.text deadline:[self stringWithDeadLineDate] data:[self dictionaryForDataToSend] importance:2 complexity:2 projectId:6 success:^{
+    [[APIMainPage sharedMainPage] createNewTask:self.enterTaskNameTextField.text description:self.enterDecriptionTextField.text deadline:[self stringWithDeadLineDate] data:[self dictionaryForDataToSend] importance:2 complexity:2 projectId:7 success:^{
         // TODO: success
     } failure:^(NSError * _Nonnull error) {
         // TODO: failure
